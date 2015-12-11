@@ -143,3 +143,14 @@ Enter word or sentence (EXIT to break): /en/geoffrey_hinton
          /en/david_rumelhart              0.405275
              /en/godel_prize              0.405176
 ```
+
+##Final words
+Thank you for trying out this toolkit, and do not forget to let us know when you obtain some amazing results! We hope that the distributed representations will significantly improve the state of the art in NLP.
+
+##References
+
+[1] Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. [Efficient Estimation of Word Representations in Vector Space](http://arxiv.org/pdf/1301.3781.pdf). In Proceedings of Workshop at ICLR, 2013.
+
+[2] Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, and Jeffrey Dean. [Distributed Representations of Words and Phrases and their Compositionality](http://arxiv.org/pdf/1310.4546.pdf). In Proceedings of NIPS, 2013.
+
+[3] Tomas Mikolov, Wen-tau Yih, and Geoffrey Zweig. [Linguistic Regularities in Continuous Space Word Representations. In Proceedings of NAACL HLT, 2013](http://research.microsoft.com/pubs/189726/rvecs.pdf).
