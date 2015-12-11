@@ -118,3 +118,28 @@ Enter word or sentence (EXIT to break): Chinese river
 ```
 
 The above example will average vectors for words 'Chinese' and 'river' and will return the closest neighbors to the resulting vector. More examples that demonstrate results of vector addition are presented in [2]. Note that more precise and disambiguated entity vectors can be found in the following dataset that uses Freebase naming.
+
+##Pre-trained entity vectors with Freebase naming
+We are also offering more than 1.4M pre-trained entity vectors with naming from [Freebase](http://www.freebase.com/). This is especially helpful for projects related to knowledge mining.
+
+* Entity vectors trained on 100B words from various news articles: [freebase-vectors-skipgram1000.bin.gz](https://docs.google.com/file/d/0B7XkCwpI5KDYaDBDQm1tZGNDRHc/edit?usp=sharing)
+* Entity vectors trained on 100B words from various news articles, using the deprecated /en/ naming (more easily readable); the vectors are sorted by frequency: [freebase-vectors-skipgram1000-en.bin.gz](https://docs.google.com/file/d/0B7XkCwpI5KDYeFdmcVltWkhtbmM/edit?usp=sharing)
+
+Here is an example output of ./distance freebase-vectors-skipgram1000-en.bin:
+
+```bash
+Enter word or sentence (EXIT to break): /en/geoffrey_hinton
+
+                        Word       Cosine distance
+--------------------------------------------------
+           /en/marvin_minsky              0.457204
+             /en/paul_corkum              0.443342
+ /en/william_richard_peltier              0.432396
+           /en/brenda_milner              0.430886
+    /en/john_charles_polanyi              0.419538
+          /en/leslie_valiant              0.416399
+         /en/hava_siegelmann              0.411895
+            /en/hans_moravec              0.406726
+         /en/david_rumelhart              0.405275
+             /en/godel_prize              0.405176
+```
